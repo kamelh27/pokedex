@@ -1,0 +1,40 @@
+.variants {
+  grid-area: variants;
+  display: flex;
+  align-items: center;
+}
+
+.variants > * {
+  border: none;
+  cursor: pointer;
+}
+
+.variants > *:active {
+  transform: scale(.9);
+}
+
+.button-turnRandom {
+  inline-size: 3rem;
+  block-size: 3rem;
+  border-radius: 50%;
+  margin-right: 2rem ;
+  background-color: var(--secondary);
+  filter: drop-shadow(2px 2px 0 var(--black));
+}
+
+.button-turnYellow {
+  inline-size: 2rem;
+  block-size: .5rem;
+  background-color: var(--yellow);
+  border-radius: .25rem;
+  margin-right: 1.5rem;
+  filter: drop-shadow(1px 1px 0 var(--yellow));
+}
+
+.butotn-turnBlue {
+  inline-size: 2rem;
+  block-size: .5rem;
+  background-color: var(--secondary);
+  border-radius: .25rem;
+  filter: drop-shadow(1px 1px 0 var(--secondary));
+}

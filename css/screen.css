@@ -1,0 +1,68 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  block-size: 14.375rem
+}
+
+.screen-border {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.5rem .95rem 1.5rem;
+  border-radius: .5rem;
+  background-color: var(--white);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 2rem 100%, 0 calc(100% - 2.75rem));
+  gap: .95rem;
+}
+
+.screen-safeArea {
+  padding: 1rem;
+  background-color: #8DB9DC;
+  border-radius: .25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  block-size: 10rem;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.screen-buttons {
+ display: grid;
+ /* grid-auto-flow: column; */
+  grid-template-columns: 60% 40%;
+}
+
+.screen-circle { 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.screen-circle span {
+  inline-size: 1rem ;
+  block-size: 1rem;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.screen-grate {
+  display: flex;
+  flex-direction: column;
+  gap: 2px ;
+  border: none;
+  background: transparent;
+  align-items: end;
+  padding: 0;
+  cursor: pointer;
+}
+
+.screen-grate > div {
+  background-color: var(--secondary);
+  height: 2px;
+  width: 22px;
+}
+
+
